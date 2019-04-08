@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "270276656250",
+    "firebase_url": "https://cse438-project3-bottom.firebaseio.com",
+    "project_id": "cse438-project3-bottom",
+    "storage_bucket": "cse438-project3-bottom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270276656250:android:79fe6ae0561209d4",
+        "android_client_info": {
+          "package_name": "com.example.cse438.blackjack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270276656250-vlv2lvbas6ssg63vr6cpvm9il7dufprm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cse438.blackjack",
+            "certificate_hash": "ba374b8420b050c09a0d0d4606dc2fe1cb9a54c5"
+          }
+        },
+        {
+          "client_id": "270276656250-kenna58in226fkdeqd9bvo39f3qpl071.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd_SxNgktVpsToCMpDNV_LbK8S9EjsYaA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270276656250-kenna58in226fkdeqd9bvo39f3qpl071.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

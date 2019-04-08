@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.Leaderboard">
+
+    <TextView
+            android:text="Leader Board"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+
+            android:id="@+id/textView3"
+            android:textSize="30dp"
+
+            android:layout_marginTop="30dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+
+            />
+
+    <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOff="Sort By Wins"
+            android:textOn="Sort By Money"
+            app:layout_constraintTop_toBottomOf="@id/textView3"
+    />
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay" android:id="@+id/appBarLayout"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <fragment
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:name="com.example.cse438.blackjack.fragment.LeaderListFragment"
+            android:id="@+id/fragment"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton"
+
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp"
+            tools:layout="@layout/fragment_leader_list"/>
+
+    <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/return_home" android:layout_marginEnd="162dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="43dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="162dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

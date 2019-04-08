@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".fragment.SignupFragment">
+
+    <TextView
+            android:text="Create Account"
+            android:layout_width="228dp"
+            android:layout_height="46dp"
+            android:id="@+id/textView2"
+            android:textSize="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="88dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="88dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="95dp"
+            app:layout_constraintHorizontal_bias="1.0"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/create_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="92dp" android:hint="Name" android:layout_marginTop="56dp"
+            app:layout_constraintTop_toBottomOf="@+id/create_password" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="106dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/create_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="92dp"
+            android:hint="Password" android:layout_marginTop="43dp"
+            app:layout_constraintTop_toBottomOf="@+id/create_email" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="106dp"/>
+    <Button
+            android:text="Create Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_account_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="132dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="134dp" app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="77dp" app:layout_constraintTop_toBottomOf="@+id/create_name"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/create_email"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="104dp"
+            android:hint="Email" android:layout_marginTop="48dp" app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="94dp"/>
+
+</android.support.constraint.ConstraintLayout>
